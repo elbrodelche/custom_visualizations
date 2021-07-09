@@ -11,7 +11,7 @@ var webpackConfig = {
     hello_world_react: './src/examples/hello_world_react/hello_world_react.js',
     sankey: './src/examples/sankey/sankey.ts',
     liquid_fill_gauge: './src/examples/liquid_fill_gauge/liquid_fill_gauge.ts',
-    power_liquid_fill_gauge: './src/examples/power_liquid_fill_gauge/power_liquid_fill_gauge.ts',
+    liquid_fill_gauge: './src/examples/liquid_fill_gauge/liquid_fill_gauge.ts',
     sunburst: './src/examples/sunburst/sunburst.ts',
     collapsible_tree: './src/examples/collapsible_tree/collapsible_tree.ts',
     chord: './src/examples/chord/chord.ts',
