@@ -42,9 +42,10 @@ looker.plugins.visualizations.add({
     // Create a container element to let us center the text.
     var container = element.appendChild(document.createElement("div"));
     container.className = "hello-world-vis";
+    
 
     // Create an element to contain the text.
-    this._textElement = container.appendChild(document.createElement("div"));
+    this._textElement = container.appendChild(document.createElement("a"));
 
   },
   // Render in response to the data or settings changing
@@ -61,10 +62,14 @@ looker.plugins.visualizations.add({
 
     // Grab the first cell of the data
     var firstRow = data[0];
+    console.log(`>>>>>`,firstRow)
     var firstCell = firstRow[queryResponse.fields.dimensions[0].name];
 
     // Insert the data into the page
-    this._textElement.innerHTML = LookerCharts.Utils.htmlForCell(firstCell);
+    this._textElement.href = 'google.com'
+    this._textElement.innerHTML = firstCell.value;
+
+    console.log('ksksksksk',queryResponse.fields.dimensions[0]);
 
     // Set the size to the user-selected size
     if (config.font_size == "small") {
